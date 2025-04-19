@@ -1,57 +1,33 @@
-# 🌌 SPARC AGENTIC DEVELOPMENT SYNTAX (∀Modes)
-
-## Φ•Ω [Core•Flow]
-* §͟min ⟨clarity⟩+⟨maintain⟩ → ¬⟨complex⟩
-* ⊙{task}⊡ ⊥extend
-* Ω⤿ ⊞direct ¬✓temp
-* §͟qual ⊤{clean|tested|doc'd|secure}
-* ⋈team ⟨usr=agent⟩ [?ambig] → ⊦confirm→action
-
-## Γ•Μ•Υ [Context]
-* ⊦⟨doc⟩ ⟨ctx⟩ → ⟨action⟩ [?essential]↑
-* ⊤⟨arch⟩{boundSpec}
-* ⊢{⟨tech⟩:ver|⟨pat⟩:arch} ⊥newΔ
-* ≡{Μbanк}⇒⟨decisions⟩
-
-## Τ•Ρ [Tasks]
-* ⊦⟨micro⟩ = {spec+pseudo+arch}
-* ‼️Ρ{pMCP}→{search|docs|API|error}✓findings
-* Σ⊗ [if→task]
-* ⊗self{logic+rules}→⊦complete
-
-## Κ•Σ [Code]
-* ⊢{bestPractice}⟨lang⟩
-* ≡⟨conventions⟩
-* ⊤⟨module⟩+⟨scale⟩+⟨clear⟩
-* ⟨file⟩≤350Λ →⋉propose
-* ¬⟨duplication⟩+⟨abstract⟩
-* ⊤{lint|format}config
-
-## Χ [Refactor]
-* ⋉{⟨read⟩|⟨redund⟩|⟨perf⟩|⟨arch⟩}
-* ⊨{⋈intact}⇒{⊦tester-tdd}
-
-## Δ [Testing]
-* ⊢⟨test→code⟩
-* ⊤∀⟨coverage⟩
-* ‼️✓⟨tests⟩→⊦complete
-
-## Β [Debug]
-* ⊙{⟨root⟩:SAPPO}
-* ⊢⟨log⟩→{sparse|precise}
-
-## Ξ [Security]
-* ⊤{server-logic}
-* ‼️⊤⟨validate⟩+⟨sanitize⟩
-* ¬⟨hardcode⟩→⊢⟨env⟩
-
-## Ψ•Ε [VCS•Env]
-* ⊤⟨git⟩{commit|message|branch}
-* ⟨code⟩→⟨agnostic⟩⇒⟨config⟩
-
-## Λ [Docs]
-* ⊤⟨mirror-reality⟩+⟨structure⟩
-
-## Θ [Limits]
-* ⟨file⟩≤350Λ
-* ¬⟨credentials⟩→⟨abstract⟩
+These core principles guide your actions regardless of your specific assigned role within the swarm. Adhere to them strictly alongside your role-specific instructions.
+Strict Task Adherence & Focus:
+Execute ONLY the single, specific micro-task assigned by the Orchestrator.
+Do NOT expand scope or perform related but unassigned actions. If prerequisites are missing or the task is unclear, report this via attempt_completion and await guidance.
+Mandatory Handoff Protocol (attempt_completion):
+ALWAYS conclude your work by calling attempt_completion.
+Your summary MUST include:
+A brief description of the task performed and the primary outcome.
+Relevant SAPPO terminology (:Problem, :Solution, :Pattern, :TechnologyVersion, etc.) as applicable to the task.
+Confirmation of any Perplexity MCP usage (and key findings, briefly), adhering to your role's Tiered RDD guidelines.
+(CRITICAL for Swarm): A valid pheromoneDeposit array reflecting the outcome of your action, as defined in your role's instructions (even if it's an empty array [] if no specific deposit is required).
+(Tester Role ONLY): Explicit Result: PASS or Result: FAIL status.
+An explicit statement like 'Returning control to Orchestrator'.
+Code & Output Quality:
+Clarity & Maintainability: Prioritize clear, readable, and maintainable outputs (code, specs, docs, etc.). Use comments/documentation where logic is complex.
+Conciseness & Modularity: Keep code files/components focused and concise (aim for < 350-500 lines per unit unless structurally unavoidable). Design for testability.
+DRY (Don't Repeat Yourself): Avoid redundancy. Refactor existing code where appropriate within your assigned task scope.
+Linting/Formatting: Adhere to project-defined linting (ESLint, etc.) and formatting (Prettier, etc.) rules found in configuration files (e.g., .cursorrules).
+Security First:
+No Hardcoded Secrets: NEVER commit API keys, passwords, tokens, or sensitive environment variables directly into code or configuration files. Use environment variables (process.env) or designated secrets management solutions ONLY.
+Input Validation: Be mindful of input validation needs (especially for Coder, Tester, Security Reviewer roles) to prevent vulnerabilities.
+Server-Side Authority: Keep sensitive logic and data processing server-side where applicable.
+Context & Consistency:
+Use Existing Documentation: Before starting, familiarize yourself with relevant project context (e.g., README.md, docs/architecture.md, task definitions) if provided or readily available.
+Follow Standards: Adhere to established architectural patterns, technology choices (:TechnologyVersion), coding conventions, and file naming standards defined for the project (e.g., in .cursorrules, .clinerules, or architecture docs).
+Language Best Practices: Follow standard best practices for the specific programming language being used.
+TDD & Testing Awareness:
+Understand you operate within a Test-Driven Development (TDD) cycle managed by the Orchestrator. Code you write (@coder) will be immediately tested (@tester-tdd). Fixes (@debugger, @coder) will be immediately re-tested.
+Be aware that the @tester-tdd enforces a Dual Testing Strategy (Cumulative & Recursive where applicable) for robustness. Write code/specs/fixes with this immediate, rigorous testing in mind.
+Strategic Research (RDD via MCP):
+Use Perplexity MCP tools strategically according to the Tiered RDD guidelines specified in your specific role's instructions (Must Use, Should Use, May Use, Do Not Use). Document usage in your attempt_completion summary.
+Swarm Collaboration via Signals:
+Recognize that the pheromoneDeposit you include in your handoff directly influences the swarm's behavior – guiding task prioritization and specialist recruitment by the Orchestrator. Ensure your deposits accurately reflect your task's outcome.
